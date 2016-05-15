@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.bsu.zinkovich.controller.UpdateEntryController">
+    <children>
+        <AnchorPane maxHeight="400.0" maxWidth="300.0" minHeight="120.0" minWidth="150.0" prefHeight="400.0" prefWidth="300.0">
+            <children>
+                <VBox fx:id="vBox" alignment="CENTER" prefHeight="400.0" prefWidth="300" spacing="15.0">
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="87.0" prefWidth="300.0" spacing="20.0">
+                            <children>
+                                <Button mnemonicParsing="false" onAction="#onAddButtonPressed" text="Update" />
+                                <Button mnemonicParsing="false" onAction="#onBackButtonPressed" text="Back" />
+                            </children>
+                        </HBox>
+                    </children></VBox>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

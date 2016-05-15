@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.bsu.zinkovich.controller.QueriesController">
+    <children>
+        <AnchorPane maxHeight="336.0" maxWidth="527.0" minHeight="120.0" minWidth="150.0" prefHeight="336.0" prefWidth="527.0">
+            <children>
+                <VBox alignment="CENTER_LEFT" prefHeight="336.0" prefWidth="527.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                  <HBox>
+                     <children>
+                        <Label text="Musician name: " />
+                                <TextField fx:id="musicianName" />
+                     </children>
+                  </HBox>
+                        <HBox prefHeight="24.0" prefWidth="527.0" spacing="10.0">
+                            <children>
+                                <Button fx:id="formsButton" mnemonicParsing="false" onAction="#onThirdQueryButtonPressed" text="Musician albums" />
+                            </children>
+                        </HBox>
+                  <HBox>
+                     <children>
+                              <Button fx:id="tablesButton" mnemonicParsing="false" onAction="#onFirstQueryButtonPressed" text="Albums from the first part of the last year" />
+                     </children>
+                  </HBox>
+                        <HBox prefHeight="0.0" prefWidth="527.0" spacing="10.0">
+                            <children>
+                                <Button mnemonicParsing="false" onAction="#onSecondQueryButtonPressed" text="Band where the musician played" />
+                            </children>
+                        </HBox>
+                  <Button mnemonicParsing="false" onAction="#onFourthQueryButtonPressed" text="Bands where the the musician still play" />
+                        <Button mnemonicParsing="false" onAction="#onBackButtonPressed" text="Back" />
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
